@@ -10,7 +10,7 @@ export const getQuote = () => {
 		axios.get('https://ron-swanson-quotes.herokuapp.com/v2/quotes')
 			.then((res) => {
 				// console.log(res);
-				dispatch({type: QUOTE_RETRIEVED, payload: res.data[0]})
+				setTimeout(() => {dispatch({type: QUOTE_RETRIEVED, payload: res.data[0]})}, 500)
 			})
 			.catch((err) => {
 				console.log(err.message)

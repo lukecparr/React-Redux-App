@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Button } from 'reactstrap';
 
@@ -10,6 +10,8 @@ import './Quotes.css';
 	const Quotes = (props) => {
 		const [copyButtonText, setCopyButtonText] = useState('Copy to clipboard')
 		
+		useEffect(() => {props.getQuote();}, [])
+
 		const onClickHandler = (e) => {
 			e.preventDefault();
 			props.getQuote();
