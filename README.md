@@ -1,4 +1,4 @@
-Hosted at [https://practical-leavitt-9ee4a7.netlify.app/](https://practical-leavitt-9ee4a7.netlify.app/)
+Hosted at [https://practical-leavitt-9ee4a7.netlify.app/](https://practical-leavitt-9ee4a7.netlify.app/) and [https://ron-swanson-quotes-tan.vercel.app/](https://ron-swanson-quotes-tan.vercel.app/)
 
 # Module Project: Async Redux - React Redux App
 
