@@ -8,9 +8,10 @@ import './Quotes.css';
 
 
 	const Quotes = (props) => {
-		const [copyButtonText, setCopyButtonText] = useState('Copy to clipboard')
+		const [copyButtonText, setCopyButtonText] = useState('Copy to clipboard');
+		const { getQuote } = props;
 		
-		useEffect(() => {props.getQuote();}, [])
+		useEffect(() => {getQuote()}, [getQuote])
 
 		const onClickHandler = (e) => {
 			e.preventDefault();
